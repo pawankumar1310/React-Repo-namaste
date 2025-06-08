@@ -1,0 +1,16 @@
+Episode 1 : 
+    Emmet => ! or html : 5
+    comment a line => ctrl + /
+    - how to create an element using HTML
+    - how to create an element using javascript
+    - how to create an element using React.
+            - cdn react links 
+                - CDN is the place where React library is hosted.
+    - React is a javascript library for building user interfaces.
+
+Episode 2:
+    - Push code on Github
+        - Create Repository on github 
+        - git init 
+        - create main branch : git branch -M Main
+        - 
