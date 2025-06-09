@@ -13,4 +13,103 @@ Episode 2:
         - Create Repository on github 
         - git init 
         - create main branch : git branch -M Main
-        - 
+        - git add .
+        - git commit -m "first commit"
+        - git push -u origin Main 
+
+    - igniting our app (How to write good code for production.)
+    - npm (Package Manager) => (It is a standard repository from where you can inject packages).
+    - package.json => It is the configuration of npm.
+
+    - add your own package.json in your project 
+        - Download node.js and install (npm)
+        - Run following command : npm init
+        - $ npm init
+
+                    Press ^C at any time to quit.
+                    package name: (react)
+                    version: (1.0.0)                                                                                                                                                              
+                    description: This is first app of Namaste React
+                    entry point: (App.js)                                                                                                                                                         
+                    test command: just                                                                                                                                                            
+                    git repository: (https://github.com/pawankumar1310/React-Repo-namaste.git)                                                                                                    
+                    keywords: React, Dotnet Core, C#
+                    author: Pawan                                                                                                                                                                 
+                    license: (ISC)                                                                                                                                                                
+                    About to write to D:\WebDevelopment\React\package.json:
+
+                    {
+                    "name": "react",
+                    "version": "1.0.0",
+                    "description": "This is first app of Namaste React",
+                    "main": "App.js",
+                    "scripts": {
+                        "test": "just"
+                    },
+                    "repository": {
+                        "type": "git",
+                        "url": "git+https://github.com/pawankumar1310/React-Repo-namaste.git"
+                    },
+                    "keywords": [
+                        "React",
+                        "Dotnet",
+                        "Core",
+                        "C#"
+                    ],
+                    "author": "Pawan",
+                    "license": "ISC",
+                    "bugs": {
+                        "url": "https://github.com/pawankumar1310/React-Repo-namaste/issues"
+                    },
+                    "homepage": "https://github.com/pawankumar1310/React-Repo-namaste#readme"
+                    }
+
+
+                    Is this OK? (yes)
+
+            - install parcel for bundler
+                - npm install -D parcel  => package-lock.json file created  and node_modules created (node_modules contains all the code that we fetched from the npm)
+            - don't push node_modules into production (git)
+            - push package.json and package-lock.json in production (git)
+            - if by mistake you have deleted node_modules then you can create through following command : npm install.
+
+    - Building our application using parcel
+        - Run following command : Remove  "main": "App.js", from package.json to create local server.
+                - npx parcel index.html => Parcel will create one server for us. It will give us one port number.
+                - Server running at http://localhost:1234
+
+        - npm and npx : npm is use for installation of packages and npx is used for executing the packages.
+        - install react => npm install react        OR  npm i react
+        - install react-dom => npm install react-dom
+
+    - Two types of dependencies 
+            - DevDependencies
+            - Normal Dependencies
+    
+    # Parcel 
+        - Dev Build (First parcel will create dev build for your)
+        - Local server (Parcel will create a local server for us, host your app to server)
+        - HMR => Hot Module Replacement (It will refresh the page automatically when you save).
+        - File Watching Algorithm - written in C++ (Parcel follow file watching algorithm).
+        - Caching - Faster builds (When we save file, it will automatically build in less time).All builds will create in .parcel-cache folder.
+        - Image Optimazation (Parcel also does image optimization in browser).
+        - Minification (If we build in production, Parcel will also do file minification).
+        - Bundling (Parcel will do bundling our all the files).
+        - Compress (Parcel wil also do compress the file).
+        - Consistent Hashing (Parcel also does consistent hashing)
+        - Code splittin (Parcel will split your file code).
+        - Differential Bundling - support older browsers as well as different different browsers.
+        - Error Handling - Parcel will give us good error suggestion.
+        - Diagnostics - Parcel displays diagnostics(error or warning) in your terminal and browser.
+        - HTTPs - Also host on https.
+        - Tree Shaking - remove unused code.
+
+        => For more information about parcel    =>       Go to parceljs.org website. 
+    
+    - npx parcel build index.html => using this command dist folder will create which contains optimized file for production.
+
+    - dist => dist folder contains production files.
+
+    - Add temp folder(.parcel-cache, dist and node_modules) in .gitignore 
+
+    - browserslist : Add browserslist in package.json file.It means, where you want to run our application on chrome, edge or firefox, opera etc.

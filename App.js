@@ -13,6 +13,8 @@ Create following element using React
 </div>
 */
 
+import React from "react";
+import ReactDOM from 'react-dom/client';
 
 const parent = React.createElement(
     'div', { id: 'parent' }, [
@@ -24,7 +26,7 @@ const parent = React.createElement(
         ),
         React.createElement(
             'div', { id: 'child2' }, [
-                React.createElement('h1', {}, 'Namaste Javascript 2'),
+                React.createElement('h1', {}, 'Namaste Javascript 2 '),
                 React.createElement('h2', {}, 'Namaste Javascript 2'),
             ]
         )

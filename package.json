@@ -1,0 +1,36 @@
+{
+    "name": "react",
+    "version": "1.0.0",
+    "description": "This is first app of Namaste React",
+    "scripts": {
+        "test": "just"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pawankumar1310/React-Repo-namaste.git"
+    },
+    "keywords": [
+        "React",
+        "Dotnet",
+        "Core",
+        "C#"
+    ],
+    "author": "Pawan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pawankumar1310/React-Repo-namaste/issues"
+    },
+    "homepage": "https://github.com/pawankumar1310/React-Repo-namaste#readme",
+    "devDependencies": {
+        "parcel": "^2.15.2"
+    },
+    "dependencies": {
+        "react": "^19.1.0",
+        "react-dom": "^19.1.0"
+    },
+    "browserslist": [
+        "last 2 Chrome version",
+        "last 3 Firefox version",
+        "last 2 versions"
+    ]
+}
