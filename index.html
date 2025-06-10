@@ -17,6 +17,7 @@
     <!-- Create an element using React -->
     <div id="rootReact"></div>
     <div id="root1"></div>
+    <div id="root2"></div>
     <script>
         //#region Create an element using javascript
         const heading = document.createElement('h1');
@@ -27,6 +28,8 @@
         //end region
     </script>
     <!-- To create element using React , we need to inject CDN React links in our application. -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script>
         //#region Create an element using React, injected CDN React links
         const headingReact = React.createElement('h1', {}, "Namaste Javascript using React");
@@ -35,6 +38,7 @@
         //end region
     </script>
     <script type="module" src="./App.js"></script>
+    <script type="module" src="./Index.js"></script>
 </body>
 
 </html>

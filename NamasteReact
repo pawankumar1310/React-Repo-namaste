@@ -1,4 +1,4 @@
-Episode 1 : 
+Episode 1 (Create react element using cdn react links): 
     Emmet => ! or html : 5
     comment a line => ctrl + /
     - how to create an element using HTML
@@ -8,7 +8,7 @@ Episode 1 :
                 - CDN is the place where React library is hosted.
     - React is a javascript library for building user interfaces.
 
-Episode 2:
+Episode 2 (Create your app in production without using CDN react links: Parcel):
     - Push code on Github
         - Create Repository on github 
         - git init 
@@ -113,3 +113,48 @@ Episode 2:
     - Add temp folder(.parcel-cache, dist and node_modules) in .gitignore 
 
     - browserslist : Add browserslist in package.json file.It means, where you want to run our application on chrome, edge or firefox, opera etc.
+
+
+Episode 03 (JSX, React Element & Functional Component): 
+    - In package.json, change
+    - "scripts": {
+        "start": "parcel index.html",
+        "build": "parcel build index.html",
+        "test": "just"
+    },
+
+    - To run project : npm run start OR npm start
+    - To buld your project in production: npm run build
+
+    => JSX : 
+        - It is not HTML in javascript. It is HTML-like or XML-like syntax.
+        - It is combination of HTML and Javascript.
+        - JSX (transpiled before it reaches the JS) - Parcel - Babel
+        - JSX => Babel transpiles it to React.createElement => ReactElement => Javascript engine Object => HTMLElement(render)
+        - If you are giving an attribute in jsx (className, tabIndex) should be in camelCase.
+    => Babel : 
+        - Babel is a javascript compiler. It takes JSX and convert into the code that browser (JS engine) understand.
+        - It converts the JSX element into react element.
+
+    Extension install : 
+        - Prettier Code
+        - Bracket Pair Colorization
+        - ESLint
+        - Better Comments
+
+    - React Element :
+        - lower case letter or camelCase
+    - React Component
+        - Two types of React component
+            1. Class Based component - Old version of writing code
+            2. Functional component - New version of writing code => It is just a normal javscript function.
+                - A function which returns jsx or react element that is called Functional component.
+                Note : When you are creating any component, Name should be in Uppercase.Function component which return some jsx.
+                - Example :
+                    const HeadingFunComponent = () =>{
+                        return <h1>It is React Functional Component</h1>
+                    }
+
+    - We can put react element inside React Functional component and vice versa.
+    - To render react element => root.render(reactElement)
+    - To render react functional component => root.render(<ReactComponent />)
