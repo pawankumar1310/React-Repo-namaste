@@ -158,3 +158,24 @@ Episode 03 (JSX, React Element & Functional Component):
     - We can put react element inside React Functional component and vice versa.
     - To render react element => root.render(reactElement)
     - To render react functional component => root.render(<ReactComponent />)
+
+Episode 4 (Create Food App, how to use CSS): 
+    - As a software engineer, before going to build an application (Project), He will do plan.What you are going to build and what is the process to build that project.How it look.
+    1. First in the planning, how will be the UI design, Wireframe, layout/UI mock.
+    2. Food App
+
+    Requirement : 
+        - Header
+            - Logo
+            - Nav link (Menu)
+        - Body
+            - Search
+            - Restaurant Container
+                - Restaurant card
+                    - Image of restaurant
+                    - Name of restaurant, star rating, cuisine, delivery time etc.
+        - Footer
+            - Copyright
+            - Links
+            - Address
+            - Contact
