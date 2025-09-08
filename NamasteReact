@@ -179,3 +179,13 @@ Episode 4 (Create Food App, how to use CSS):
             - Links
             - Address
             - Contact
+
+    props : It's a arguments of a function.It is also know as Property.
+        const Heading = (props) =>{
+            // OR const{restName, cuisins} = props;
+        }
+    Config-driven UI : 
+        Config-driven UI in React is a design paradigm where the structure, layout, and behavior of the user interface are defined and controlled by external configuration files or objects, rather than being hard-coded within the application's components. These configurations are typically in formats like JSON or YAML. 
+    How to pass dynamic data into component?
+    How to render multiple component through map.
+    

@@ -28,5 +28,11 @@
 
 .restaurant-card{
     width: 200px;
-    height: 300px;
+    height: 400px;
+    border: 1px dashed blue;
+}
+.restaurant-container{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
 }

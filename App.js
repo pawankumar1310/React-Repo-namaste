@@ -19,15 +19,15 @@ import ReactDOM from 'react-dom/client';
 const parent = React.createElement(
     'div', { id: 'parent' }, [
         React.createElement(
-            'div', { id: 'child1' }, [
-                React.createElement('h1', {}, 'Namaste Javascript 1'),
-                React.createElement('h2', {}, 'Namaste Javascript 1'),
+            'div', { id: 'child1',key: "child1" }, [
+                React.createElement('h1', {key: "h1c1"}, 'Namaste Javascript 1'),
+                React.createElement('h2', {key: "h2c1"}, 'Namaste Javascript 1'),
             ]
         ),
         React.createElement(
-            'div', { id: 'child2' }, [
-                React.createElement('h1', {}, 'Namaste Javascript 2 '),
-                React.createElement('h2', {}, 'Namaste Javascript 2'),
+            'div', { id: 'child2',key: "child2" }, [
+                React.createElement('h1', {key: "h1c2"}, 'Namaste Javascript 2 '),
+                React.createElement('h2', {key: "h2c2"}, 'Namaste Javascript 2'),
             ]
         )
     ]
