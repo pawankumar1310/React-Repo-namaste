@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./FoodLayout.css" />
+    <link rel="stylesheet" href="./Index.css" />
 </head>
 
 <body>
@@ -13,35 +13,7 @@
     <div id="root">
         <h1>Hello Namaster Javascript</h1>
     </div>
-    <!-- Create an element using javascript -->
-    <div id="rootJS"></div>
-    <!-- Create an element using React -->
-    <div id="rootReact"></div>
-    <div id="root1"></div>
-    <div id="root2"></div>
-    <div id="foodApp"></div>
-    <script>
-        //#region Create an element using javascript
-        const heading = document.createElement('h1');
-        heading.innerHTML = "Namaster Javascript using Javascript";
-        const root = document.getElementById('rootJS');
-        //root.innerHTML = heading.innerHTML;
-        root.appendChild(heading);
-        //end region
-    </script>
-    <!-- To create element using React , we need to inject CDN React links in our application. -->
-    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script>
-        //#region Create an element using React, injected CDN React links
-        const headingReact = React.createElement('h1', {}, "Namaste Javascript using React");
-        const rootReact = ReactDOM.createRoot(document.getElementById('rootReact'));
-        rootReact.render(headingReact);
-        //end region
-    </script> -->
-    <script type="module" src="./App.js"></script>
     <script type="module" src="./Index.js"></script>
-    <script type="module" src="./FoodLayout.js"></script>
 </body>
 
 </html>
