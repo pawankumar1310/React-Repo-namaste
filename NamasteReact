@@ -188,4 +188,21 @@ Episode 4 (Create Food App, how to use CSS):
         Config-driven UI in React is a design paradigm where the structure, layout, and behavior of the user interface are defined and controlled by external configuration files or objects, rather than being hard-coded within the application's components. These configurations are typically in formats like JSON or YAML. 
     How to pass dynamic data into component?
     How to render multiple component through map.
+
+Episode 5 : (Let's get Hooked)
+    - Make a 'src' folder and keep all components inside this.
+    - Befoe import the componet, we must export that component in that file like `export default ComponentName`
+    - Two types of export/import :
+        1. default export => export default componentName  => import componentName from './path'
+        2. named export   => export const componentName    => import {componentName} from './path'
+
+    - Hooks : It is normal javascript function. 
+        - State variable : Super powerful variable. It will maintain the state of your component.
+            - Example : const [listRestaurant] = useState([]);
+            - listRestaurant is the state variable.
+        - Whenever a state variable changes, React re-render the component.It will see the difference in DOM and update the UI.
+
+    - Reconcilation Algorithm (React Fiber)
+    - Virtual DOM : It is the represantation of actual DOM.
+    - Diff algorithm.
     

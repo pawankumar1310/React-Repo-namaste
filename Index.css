@@ -36,3 +36,8 @@
     flex-wrap: wrap;
     border: 1px solid black;
 }
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}
