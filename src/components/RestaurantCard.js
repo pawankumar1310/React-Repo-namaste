@@ -4,8 +4,6 @@ const RestaurantCard = (props) => {
     // const {restaurantName, cuisins} = props;
     const {restName} = props;
     const info = restName?.card?.card?.info;
-    console.log("INFO", info?.name);
-    console.log(restName);
     return (
         // <div className='restaurant-card' style={styleCard}>
         <div className='restaurant-card' style={{ backgroundColor: "#f0f0f0", width: "200px" }}>

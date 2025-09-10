@@ -201,8 +201,75 @@ Episode 5 : (Let's get Hooked)
             - Example : const [listRestaurant] = useState([]);
             - listRestaurant is the state variable.
         - Whenever a state variable changes, React re-render the component.It will see the difference in DOM and update the UI.
-
+    - useState() :
+        - useState is a React Hook that allows us to add state variables to functional components.
+        - useState is used to store and update values inside functional components.
+        - Whenever the state changes using its setter function, React automatically re-renders the component with the new value.
+        
     - Reconcilation Algorithm (React Fiber)
     - Virtual DOM : It is the represantation of actual DOM.
     - Diff algorithm.
     
+Episode 6 : (Exploring the world)
+    - Monolithic/Microservices
+    - Two approaches to render component 
+        1. When you application first time statrts then :
+            Load => API call (takes 500ms) => Render component
+
+        2.  Load => Render component => API call => Re-render component (It is best practice).
+    - useEffect() hook : It takes two arguments.
+    - useEffect(callback function, dependencies array)
+        - Example : useEffect(() =>{
+                        console.log("useEffect called)
+                    }, []);
+
+            Note : when components render, after that callback function call of useEffect.
+            - useEffect function will be called after the component has been rendered.
+    - call swiggy api 
+    - CORS
+    - Add exptension : Allow CORS: Access-Control-Allow-Origin
+    - Shimmer UI (If initial api is taking time, we need to show fake card in UI instead of loading).
+    - Shimmer UI is useful for better user exprience.
+    - change button from Login to Logout and vice versa after click button.
+    - Implement search bar
+        - Whenever a state variable update, react triggers a reconciliation cycle(re-renders the component);
+
+Episode 6.1 : (Swiggy API Issue Resolved)
+Episode 6.2 : (CORS Plugin issue solved)
+    - Without enable Allow Cors origin plugin , try below url.
+    - Go to `corsproxy.io` website => https://corsproxy.io/?url=https://example.com
+Episode 7 : (Finding the path)
+    - useEffect will be called when components render.
+    - useEffect() it takes two parameters 
+        1. callback function
+        2. dependencies array : It will change the behavior of it's render.
+
+        Note : 
+            1. If no dependencies array then useEffect is called on every render.
+            Example :
+                    useEffect(()=>{
+
+                    });
+
+            2. If dependency array is empty = [], then useEffect is called on initial render (just once);
+            Example : 
+                    useEffect(()=>{
+
+                    },[]);
+
+            3. If dependency array is [btnReactElement] , then useEffect is called everytime when btnReactElemnt is updated.
+            Example : 
+                    useEffect(()=>{
+
+                    },[btnReactElement]);
+
+    Dependency Array ([] in useEffect):
+            [] →            Run only once (on mount).
+            [variable] →    Run whenever that variable changes.
+            No array →      Run on every render (rarely used).
+
+    - Always call useState() inside the components. It is used to create local state variable inside the components.
+    - Don't use react hooks inside if else condition or inside for() loop.
+
+    - React Router : 
+        - 
