@@ -272,4 +272,7 @@ Episode 7 : (Finding the path)
     - Don't use react hooks inside if else condition or inside for() loop.
 
     - React Router : 
-        - 
+        - It is an external library.
+        - install react-router-com library in your application
+        - `npm i react-router-dom`
+        - Routing-configuration
