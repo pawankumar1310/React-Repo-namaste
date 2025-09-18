@@ -275,4 +275,14 @@ Episode 7 : (Finding the path)
         - It is an external library.
         - install react-router-com library in your application
         - `npm i react-router-dom`
-        - Routing-configuration
+        - Routing-configuration (In root component i.e index.js)
+        - createBrowserRouter, RouterProvider
+        - useRouteError() : using this hooks, we can get more about errors.
+        - errorElement : '/Error'
+        - create childeren routes : use 'Outlet'
+
+    - To create component shortcut key => rafce
+    - Never use anchor tag to navigate other page because it reload the whole page (It means it refresh the page).
+    - Use Link component to navigate. Because of this, React is a single page application.We just changing the component not refresh the whole page.
+    - dynamic path : "/component/:2"
+    - useParams hooks : It is used to extract id from the url.It is used in dynamic path navigation.
