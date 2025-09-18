@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { restaurantList } from "../utils/mockData";
 import { useParams } from "react-router-dom";
+import Shimmer from "./Shimmer";
 
 const RestaurantMenu = ()=>{
     const [restaurantDataList, setRestaurantList] = useState(restaurantList);
