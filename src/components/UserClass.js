@@ -11,6 +11,10 @@ class UserClass extends React.Component{
         };
     }
 
+    componentDidMount(){
+        console.log("This method will call after render component");
+    }
+
     render(){
         const {name, location} = this.props;
         const {count} = this.state;

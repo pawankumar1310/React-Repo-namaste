@@ -301,3 +301,16 @@ Episode 8 : Let's get Classy.
         }
     - How to pass props to class based component.
     - How to use state variable in class based component.
+    - Life cycle of React 
+        - First constructor will be call.
+        - Then render the component
+        - If parent component has child component then it's child constructor will be called.
+        - child render the component
+        - child componentDiMount() method will call.
+        - At last parent componentDidMount() method will call.
+
+    - componentDidMount() : This method is to make an API call.
+    - Life cyle of react :
+        - React has two phases.
+            1. Render phase : constructor and render will be call.
+            2. Commit phase : change
