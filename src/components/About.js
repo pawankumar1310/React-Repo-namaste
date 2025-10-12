@@ -8,7 +8,8 @@ export const About = ()=>{
                 <h4>About Page...</h4>
                 <User name={"Pawan Kumar"}/>
                 {/** This is Class based component */}
-                <UserClass name = {"Pawan K"} location = {"Azamgarh"}/>
+                <UserClass name = {"First Name"} location = {"Azamgarh"}/>
+                <UserClass name = {"Second Name"} location = {"Banaras"}/>
             </div>
         </>
     )
