@@ -319,20 +319,90 @@ Episode 8 : Let's get Classy.
             - Parent Constructor call
             - Parent render the component
                 - First Child constructor call
-                - firt child render the component
+                - first child render the component
                 
                 - second child constructor call
-                - second child render the componet
+                - second child render the component
 
                 - first child componentDidMount() method will be call.
                 - second child componentDidMount() method will be call.
 
             - Parent componentDidMount() method will be call.
 
+    - componentDidMount() :
+        - componentDidMount() is a lifecycle method in class components.
+        - It runs once, immediately after the component is mounted (inserted into the DOM).
+        - useCases :
+            - Fetch data from an API
+            - Start timers or subscriptions
+            - Initialize third-party libraries
+            - Manipulate the DOM (if necessary)
+        Notes : Using the useEffect() hook with an empty dependency array ([]) mimics componentDidMount.
+        Example :
+                useEffect(() => {
+                    // This runs only once after the first render
+                    fetch("https://api.github.com/users/octocat")
+                    .then(res => res.json())
+                    .then(data => setUserData(data));
+                }, []); // ← Empty array means "run only on mount"
+
     - componentDidUpdate() : 
-        - 
-    
+        - componentDidUpdate() is a class component lifecycle method that runs after the component updates, i.e., after state or props change and the component re-renders.
+        
+        - Example :
+            componentDidUpdate(prevProps, prevState) 
+            {
+                if (prevState.count !== this.state.count) 
+                {
+                    console.log("Count updated:", this.state.count);
+                }
+            }
+
+        - In functional components, we use useEffect() with a dependency array to mimic componentDidUpdate.
+        - Example :
+            useEffect(() => {
+                    console.log("Count updated:", count);
+                }, [count]); // runs every time "count" changes
+
+            Note :
+                "componentDidMount runs once after the initial render, while componentDidUpdate runs after every re-render caused by changes in state or props."
+
     - componentWillUnmount() : 
+        - componentWillUnmount() is a React class component lifecycle method that is called just before a component is removed from the DOM (i.e., unmounted or destroyed).
+        - It is used mainly for cleanup tasks to prevent memory leaks or unwanted background processes.
+        - Common Use Cases:
+            - Clearing timers or intervals
+            - Removing event listeners
+        Note : 
+            - In functional components, you achieve the same behavior using a cleanup function inside useEffect().
+            - Example :
+                  useEffect(() => {
+                        const interval = setInterval(() => {
+                        setSeconds((prev) => prev + 1);
+                        }, 1000);
+
+                        // cleanup function (called on unmount)
+                        return () => {
+                        clearInterval(interval);
+                        console.log("Timer component removed from DOM");
+                        };
+                    }, []); // empty dependency -> runs once
+
+        Mouting :
+            Constructor (dummy)
+            Render (dummy)
+                HTML (dummy)
+            ComponentDidMount() method call
+                <API Call>
+                <this.setState> -> state variable is updated
+
+        Update : 
+            - render <api data>
+            - html new api data
+            - ComponentDidUpdate()
+
+        
 
 Episode 09 : Optimising our App
-    - Single Responsibility principle
+    - Single Responsibility principle 
+    - create custom hooks
