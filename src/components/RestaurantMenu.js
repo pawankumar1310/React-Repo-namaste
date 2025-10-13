@@ -1,21 +1,14 @@
 import { useEffect, useState } from "react";
-import { restaurantList } from "../utils/mockData";
+import useRestaurantMenu from "../utils/useRestaurantMenu";
 import { useParams } from "react-router-dom";
 import Shimmer from "./Shimmer";
 
 const RestaurantMenu = ()=>{
-    const [restaurantDataList, setRestaurantList] = useState(restaurantList);
+    
 
     const {resId} = useParams();
-    console.log(resId);
-    useEffect(()=>{
-        fetchData();
-    },[]);
 
-    const fetchData = async ()=>{
-        const filterData = restaurantDataList.filter((rest) => rest?.card?.card?.info?.id === resId);
-        await setRestaurantList(filterData);
-    }
+    const restaurantDataList =  useRestaurantMenu(resId);
 
     if (restaurantDataList.length === 0) {
         return <Shimmer />
