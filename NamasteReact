@@ -310,7 +310,11 @@ Episode 8 : Let's get Classy.
         - At last parent componentDidMount() method will call.
 
     - componentDidMount() : This method is to make an API call.
-    - Life cyle of react :
+    - Life cyle of react : https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
         - React has two phases.
             1. Render phase : constructor and render will be call.
             2. Commit phase : change
+
+
+Episode 09 : Optimising our App
+    - Single Responsibility principle
