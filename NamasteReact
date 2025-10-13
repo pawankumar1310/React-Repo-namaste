@@ -315,6 +315,21 @@ Episode 8 : Let's get Classy.
             1. Render phase : constructor and render will be call.
             2. Commit phase : change
 
+        - if two child components called from the parent class then :
+            - Parent Constructor call
+            - Parent render the component
+                - First Child constructor call
+                - firt child render the component
+                
+                - second child constructor call
+                - second child render the componet
 
-Episode 09 : Optimising our App
-    - Single Responsibility principle
+                - first child componentDidMount() method will be call.
+                - second child componentDidMount() method will be call.
+
+            - Parent componentDidMount() method will be call.
+
+    - componentDidUpdate() : 
+        - 
+    
+    - componentWillUnmount() : 
