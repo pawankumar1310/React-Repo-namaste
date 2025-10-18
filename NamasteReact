@@ -402,7 +402,16 @@ Episode 8 : Let's get Classy.
             - ComponentDidUpdate()
 
         
-
 Episode 09 : Optimising our App
     - Single Responsibility principle 
-    - create custom hooks
+    - create custom hooks (create custom hooks inside utils filder)
+    - user is online or offline? (Or Internet is on/off)
+        - Window : Online event
+
+    - Chunking
+    - Code Splitting
+    - Dynamic Bundling
+    - Lazy Loading
+    - On demand loading
+    - dynamic import
+    - Splittig bundle. (Created Grocery component)

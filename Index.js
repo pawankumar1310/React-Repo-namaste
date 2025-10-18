@@ -6,6 +6,10 @@ import Contact from './src/components/Contact';
 import Error from './src/components/Error';
 import Body from './src/components/Body';
 import RestaurantMenu from './src/components/RestaurantMenu';
+// import { Grocery } from './src/components/Grocery';
+import { lazy,Suspense } from 'react';
+
+const Grocery = lazy(()=> import('./src/components/Grocery'));
 
 const appRouter = createBrowserRouter(
     [
@@ -28,6 +32,10 @@ const appRouter = createBrowserRouter(
                 {
                     path: "/restaurant/:resId",
                     element: <RestaurantMenu />
+                },
+                {
+                    path: "/grocery",
+                    element:<Suspense fallback={<h1>Loading..</h1>}><Grocery /></Suspense>
                 }
             ],
             errorElement: <Error />
