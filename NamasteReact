@@ -438,3 +438,5 @@ Episode 10 : Jo dikhta hai wo bikata hai.
                         "@tailwindcss/postcss": {}
                     }
                 }
+    - Important tool for tailwind css
+        - tailwind vs code extension (Tailwind CSS IntelliSense)

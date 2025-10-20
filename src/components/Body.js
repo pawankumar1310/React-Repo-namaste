@@ -46,8 +46,8 @@ const Body = () => {
 
     return (
         <div className='body'>
-            <div className='filter'>
-                <input className="search-box" type="text" value={searchInput} onChange={
+            <div className='m-4 p-4'>
+                <input className="border border-solid border-black" type="text" value={searchInput} onChange={
                     (e) => {
                         setSearchInput(e.target.value);
                     }
@@ -57,15 +57,15 @@ const Body = () => {
                         const searchData = restaurantList.filter((res) => res?.card?.card?.info?.name.toLowerCase().includes(searchInput.toLowerCase()));
                         setRestaurantList(searchData);
                     }}
-                    className="search-btn">Search</button>
+                    className="px-4 m-2 bg-blue-200 rounded-lg cursor-pointer">Search</button>
                 <button
-                    className="filter-btn"
+                    className="px-4 m-2 bg-green-200 rounded-lg cursor-pointer"
                     onClick={() => {
                         const filterListData = restaurantList.filter((res) => res?.card?.card?.info?.avgRating > 4.3);
                         setRestaurantList(filterListData);
                     }}>Filter Top rated Restaurant</button>
             </div>
-            <div className='restaurant-container'>
+            <div className='flex wrap'>
                 {/* <RestaurantCard restName = {restObject} /> */}
                 {
                     restaurantDataList.map((restaurant) => (
