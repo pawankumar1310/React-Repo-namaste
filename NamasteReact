@@ -415,3 +415,26 @@ Episode 09 : Optimising our App
     - On demand loading
     - dynamic import
     - Splittig bundle. (Created Grocery component)
+
+Episode 10 : Jo dikhta hai wo bikata hai.
+    - Add CSS (using external library)
+        - Bootstrap
+        - Saas (for adding more css)
+        - styled components
+        - material UI
+        - Chankra UI
+        - Ant design
+
+    - Tailwind css
+        - Rapidly build modern websites without ever leaving your HTML.
+    - Go to https://tailwindcss.com/docs/installation/framework-guides 
+        - Choose parcel 
+        - install tailwind using following command :
+            - npm install tailwindcss @tailwindcss/postcss
+        - Configure PostCSS (.postcssrc)
+                {
+                 "plugins": 
+                    {
+                        "@tailwindcss/postcss": {}
+                    }
+                }
