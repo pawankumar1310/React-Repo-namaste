@@ -32,4 +32,33 @@ Hooks :
     - Hooks are special functions introduced in React 16.8 that allow functional components to use features like state and lifecycle methods, and other React features without writing class components which were previously available only in class components.
     - Hooks “simulate” lifecycle behavior such as componentDidMount, componentDidUpdate, and componentWillUnmount.
     - It make functional components more powerful and reusable. 
-    - It must start with use, like useState, useEffect.
+    - It must start with 'use', like useState, useEffect.
+
+Component :
+    - Component is reusable piece of code, used in multiple times in different parts of website.
+    - A component is a reusable and independent piece of UI in React.
+    - Components make code modular, maintainable, and easy to manage.
+
+useState() : 
+    - It is used to manage the state of element.
+    - useState() is a React Hook used to create and manage state in functional components.
+    - It allows you to store dynamic values and re-render the UI whenever the state changes.
+
+useEffect() :
+    - I is used to handle the side effect like if any state changes or background some tasks executing which we can't see.
+    - useEffect() is a React Hook used to handle side effects in functional components.
+    - Side effects include tasks like:
+        - Fetching API data
+        - Updating DOM manually
+        - Setting up subscriptions or timers
+    
+Babel (Transpiler) :
+    - Babel is a JavaScript transpiler that converts modern JavaScript (ES6+ and JSX) into older, browser-compatible JavaScript (ES5).
+    - Browsers don’t understand JSX or latest ES features like let, const, arrow functions, async/await, etc. — so Babel transforms them into code that all browsers can execute.
+
+useReducer() :
+    - useReducer is a React Hook used to manage complex state logic in functional components — especially when the state depends on multiple sub-values or when the next state depends on the previous one.
+
+Redux Toolkit (RTK) : 
+    - Redux Toolkit (RTK) is a set of utilities provided by the Redux team to simplify writing Redux code.
+    - It reduces boilerplate by using createSlice for actions + reducers, configureStore for store setup, and createAsyncThunk for API calls.
