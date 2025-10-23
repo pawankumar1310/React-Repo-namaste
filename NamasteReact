@@ -440,3 +440,7 @@ Episode 10 : Jo dikhta hai wo bikata hai.
                 }
     - Important tool for tailwind css
         - tailwind vs code extension (Tailwind CSS IntelliSense)
+
+Episode 11 : Data is the new Oil 
+    - Higher order component : 
+        - Higher order component is the function that takes a component and return the component.
