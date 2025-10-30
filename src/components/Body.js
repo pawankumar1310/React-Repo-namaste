@@ -1,4 +1,4 @@
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import { restaurantList } from "../utils/mockData";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
@@ -9,6 +9,8 @@ import useOnlineStatus from "../utils/useOnlineStatus";
 const Body = () => {
     const [restaurantDataList, setRestaurantList] = useState(restaurantList);
     const [searchInput, setSearchInput] = useState("");
+
+    const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
     // const arr = useState(restaurantList);
     // const restaurantDataList = arr[0];
@@ -73,7 +75,7 @@ const Body = () => {
                         to = {"/restaurant/" + restaurant?.card?.card?.info?.id} 
                         key={restaurant?.card?.card?.info?.id} 
                         >
-                        <RestaurantCard  restName={restaurant} />
+                        {restaurant?.card?.card?.info?.promoted ? <RestaurantCardPromoted restName={restaurant}/> : <RestaurantCard  restName={restaurant} />}
                         </Link>
                     ))
                 }

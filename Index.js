@@ -8,6 +8,7 @@ import Body from './src/components/Body';
 import RestaurantMenu from './src/components/RestaurantMenu';
 // import { Grocery } from './src/components/Grocery';
 import { lazy,Suspense } from 'react';
+import { Swiggy } from './src/components/Swiggy';
 
 const Grocery = lazy(()=> import('./src/components/Grocery'));
 
@@ -20,6 +21,10 @@ const appRouter = createBrowserRouter(
                 {
                     path : "/",
                     element : <Body />
+                },
+                {
+                    path: "/swiggy",
+                    element:< Swiggy/>
                 },
                 {
                     path: "/about",

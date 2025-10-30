@@ -21,7 +21,8 @@ const RestaurantMenu = ()=>{
             <h1>Restaurant Menu</h1>
             <h2>
                 {restaurantDataList.map((rest) => 
-                    (<li key={rest?.card?.card?.info?.id}>{rest?.card?.card?.info?.name} : {rest?.card?.card?.info?.costForTwo}</li>))}
+                    (<li key={rest?.card?.card?.info?.id}>
+                        {rest?.card?.card?.info?.name} : {rest?.card?.card?.info?.costForTwo}</li>))}
             </h2>
         </div>
     )
