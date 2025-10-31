@@ -456,5 +456,7 @@ Episode 11 : Data is the new Oil
             - Note : React has one way data flow.(One child to another child, from another child to it's child and so on from top to bottom)
             - In props drilling is a problem, to overcome this problems, we use context.
     - context :
+        - contextAPI
         - context is like global things.
+        - useContext
         - createContext
