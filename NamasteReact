@@ -460,3 +460,11 @@ Episode 11 : Data is the new Oil
         - context is like global things.
         - useContext
         - createContext
+        - In class based component we use :
+            <UserContext.Consumer>
+                {(loggedInUser) => <h1>{loggedInUser}</h1>}
+            </UserContext.Consumer>
+    - UserContext.Provider
+    - Redux : when we use redux, then no need to use context.
+    - Redux is a state management library.
+    - UI Layer/ Data Layer
