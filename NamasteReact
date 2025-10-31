@@ -468,3 +468,6 @@ Episode 11 : Data is the new Oil
     - Redux : when we use redux, then no need to use context.
     - Redux is a state management library.
     - UI Layer/ Data Layer
+
+Episode 12 : Let's build our store.
+    - Redux : Redux works in data layer in our application.
