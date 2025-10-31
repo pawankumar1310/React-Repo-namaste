@@ -8,7 +8,7 @@ export const Swiggy = ()=>{
     const [swiggyDataList, setSwiggyDataList] = useState(swiggyData.cards);
 
     const categories = swiggyDataList.filter(item => item.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory");
-    console.log(categories);
+    console.log("Category : ", categories);
     if(swiggyData.cards.length === 0)
     {
       return  <Shimmer />

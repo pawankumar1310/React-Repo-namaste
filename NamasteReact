@@ -449,6 +449,7 @@ Episode 11 : Data is the new Oil
     - Accordion (Collapse & Expand) 
         - Accordion Header
         - Accordion Body
+    - install React Developer tools (optional)
     - Lifting State up (How to pass data from child to parent. Note : It's not possible but somehow we have done)
     - props drilling  :
             - Note : React has one way data flow.(One child to another child, from another child to it's child and so on from top to bottom)
