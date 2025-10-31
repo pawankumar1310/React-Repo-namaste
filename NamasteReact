@@ -446,6 +446,7 @@ Episode 11 : Data is the new Oil
         - Higher order component is the function that takes a component and return the component.
     - UI Layer and Data Layer (props, curly braces, fetching data)
     - controlled and uncontrolled component
+        - When you are controlling the child component from parent component by passing arguments.
     - Accordion (Collapse & Expand) 
         - Accordion Header
         - Accordion Body
