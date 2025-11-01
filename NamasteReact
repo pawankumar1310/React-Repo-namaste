@@ -471,8 +471,24 @@ Episode 11 : Data is the new Oil
 
 Episode 12 : Let's build our store.
     - Redux : Redux works in data layer in our application. 
+    - Instead of using contextAPI, we use Redux for complex project.
     - React and Redux is different libraries.
     - Zustand
     - React team offers two libraries :
         1. React-Redux
         2. Redux Toolkit
+    - Redux is nothing but big old objects and it kept at global central place.
+    - Cart :
+        - I want to add item into cart.
+        - When you want to add button by clicking the add button which will call dispatch action which call reducer funtion which updates the slice of cart redux store.
+         Add => Dispatch function() => Reducer funtion() => updates the slice of redux store.
+         - cart is subscribe to the store using selector and display the number of items in the cart.
+        - Selector => Subscribing to the store.
+    
+    Redux Toolkit :
+        - install @reduxjs/toolkit and react-redux
+        - Build our store
+        - connect our store to our app
+        - Slice (cartSlice)
+        - dispatch (action)
+        - Selector
