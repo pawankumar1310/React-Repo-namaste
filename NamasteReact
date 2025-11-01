@@ -470,4 +470,9 @@ Episode 11 : Data is the new Oil
     - UI Layer/ Data Layer
 
 Episode 12 : Let's build our store.
-    - Redux : Redux works in data layer in our application.
+    - Redux : Redux works in data layer in our application. 
+    - React and Redux is different libraries.
+    - Zustand
+    - React team offers two libraries :
+        1. React-Redux
+        2. Redux Toolkit
