@@ -62,3 +62,22 @@ useReducer() :
 Redux Toolkit (RTK) : 
     - Redux Toolkit (RTK) is a set of utilities provided by the Redux team to simplify writing Redux code.
     - It reduces boilerplate by using createSlice for actions + reducers, configureStore for store setup, and createAsyncThunk for API calls.
+
+Throttling : 
+    - Throttling limits the rate at which a function can be called, ensuring that it executes at most once within a specified time interval. Unlike debouncing, which waits for a pause, throttling guarantees execution at regular intervals, even if the event continues to fire rapidly.
+    - Use Cases in React: 
+        - Scroll Event Handlers
+        - Mouse Movement Tracking
+        - Button Clicks
+
+Debouncing : 
+    - Debouncing delays the execution of a function until a certain amount of time has passed without the function being called again. If the function is called again within that time period, the timer is reset.
+    - Use Cases in React: 
+        - Search Input Fields
+        - Form Validation
+        - Window Resizing
+
+Difference : 
+    - onClick={handleAddItem}
+    - onClick={handleAddItem(item)}
+    - onClick={()=> handleAddItem(item)}

@@ -483,7 +483,7 @@ Episode 12 : Let's build our store.
         - When you want to add button by clicking the add button which will call dispatch action which call reducer funtion which updates the slice of cart redux store.
          Add => Dispatch function() => Reducer funtion() => updates the slice of redux store.
          - cart is subscribe to the store using selector and display the number of items in the cart.
-        - Selector => Subscribing to the store.
+        - Selector => Subscribing to the store using a Selector.
     
     Redux Toolkit :
         - install @reduxjs/toolkit and react-redux
@@ -492,3 +492,7 @@ Episode 12 : Let's build our store.
         - Slice (cartSlice)
         - dispatch (action)
         - Selector
+
+    - Provider from react-redux
+    - useSelector hook (import from react-redux)
+    - useDispatch()

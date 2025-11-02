@@ -9,6 +9,7 @@ import RestaurantMenu from './src/components/RestaurantMenu';
 // import { Grocery } from './src/components/Grocery';
 import { lazy,Suspense } from 'react';
 import { Swiggy } from './src/components/Swiggy';
+import { Cart } from './src/components/Cart';
 
 const Grocery = lazy(()=> import('./src/components/Grocery'));
 
@@ -37,6 +38,10 @@ const appRouter = createBrowserRouter(
                 {
                     path: "/restaurant/:resId",
                     element: <RestaurantMenu />
+                },
+                {
+                    path: "/cart",
+                    element: <Cart />
                 },
                 {
                     path: "/grocery",
