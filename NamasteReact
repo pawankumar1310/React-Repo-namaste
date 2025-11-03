@@ -496,3 +496,7 @@ Episode 12 : Let's build our store.
     - Provider from react-redux
     - useSelector hook (import from react-redux)
     - useDispatch()
+    - Immer
+
+    - Redux DevTools
+    - RTK Query
