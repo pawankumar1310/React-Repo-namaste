@@ -549,4 +549,10 @@ Episode 12 : Let's build our store.
             - Sum.spec.ts
 
     - install vscode-icons through extension to see folder with different color (optional).
+    - Write test case , contact us is loading or not.
+    - install @babel/preset-react to make JSX work in test cases.
+        npm install -D @babel/preset-react
+    - include @babel/preset-react inside my babel config.
+    - install @testing-library/jest-dom - for toBeInTheDocument() method.
+        npm i -D @testing-library/jest-dom
 
