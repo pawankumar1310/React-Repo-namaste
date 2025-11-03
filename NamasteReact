@@ -541,3 +541,12 @@ Episode 12 : Let's build our store.
 
         - install jsdom library :   npm install --save-dev jest-environment-jsdom
 
+    - Create `__tests__` (dunder) folder and all js file inside this folder will consider as testcase file.
+        - testcase file can be : 
+            - Sum.test.js
+            - Sum.test.ts
+            - Sum.spec.js
+            - Sum.spec.ts
+
+    - install vscode-icons through extension to see folder with different color (optional).
+
