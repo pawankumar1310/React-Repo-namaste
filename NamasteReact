@@ -500,3 +500,44 @@ Episode 12 : Let's build our store.
 
     - Redux DevTools
     - RTK Query
+
+    Episode 13 : Time for the test.
+        - How to write test case of our application?
+        - Different type of testing, a developer can do ?
+            1. Manual testing
+                Types of testing (Developer point of view) :
+                    1. Unit Testing
+                    2. Integration testing
+                    3. End to End Testing - e2e Testing
+        - React Testing Library
+            - Jest : 
+                - Jest is a delightful javascript testing framework with a focus on simplicity.
+
+    Setup for writing test cases :
+        - install react testing library :   npm install -D @testing-library/react
+        - install jest library :            npm install -D jest
+        - install babel dependencies:       npm install --save-dev babel-jest @babel/core @babel/preset-env
+        - configured babel
+            - create babel.config.js at root level and paste following code :
+
+                    module.exports = {
+                        presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+                        };
+
+            - configure parcel config file (.parcelrc) to disable default babel transpilation
+
+        - jest configuration :  npx create-jest
+
+            √ Would you like to use Typescript for the configuration file? ... no
+            √ Choose the test environment that will be used for testing » jsdom (browser-like)
+            √ Do you want Jest to add coverage reports? ... yes
+            √ Which provider should be used to instrument code for coverage? » babel
+            √ Automatically clear mock calls, instances, contexts and results before every test? ... yes
+
+            This will create a file: jest.config.js
+
+        - To run test case use following commands :
+            npm run test        or   npx jest
+
+        - install jsdom library :   npm install --save-dev jest-environment-jsdom
+
