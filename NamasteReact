@@ -507,9 +507,13 @@ Episode 12 : Let's build our store.
         - Different type of testing, a developer can do ?
             1. Manual testing
                 Types of testing (Developer point of view) :
-                    1. Unit Testing
-                    2. Integration testing
-                    3. End to End Testing - e2e Testing
+                    1. Unit Testing :
+                        - Test individual functions, methods, or classes in isolation.
+                        - Tool examples: xUnit, NUnit, MSTest (for .NET), Jest (for React), JUnit (for Java).
+                    2. Integration testing :
+                        - Test how different modules, services, or components work together.
+                    3. End to End Testing - e2e Testing :
+                        - Test the entire application flow — from UI → API → DB → UI result.
         - React Testing Library
             - Jest : 
                 - Jest is a delightful javascript testing framework with a focus on simplicity.
@@ -526,6 +530,7 @@ Episode 12 : Let's build our store.
                         };
 
             - configure parcel config file (.parcelrc) to disable default babel transpilation
+            - Go to following linke : https://parceljs.org/languages/javascript/#babel
 
         - jest configuration :  npx create-jest
 
@@ -561,3 +566,5 @@ Episode 12 : Let's build our store.
     - We can also write test case in side a group using describe() method. This method will contain multiple test case.
     - Coverage folder has been created for test cases. No need to push it in git.
 
+    - add jest --watch in your package.json to keep running your application.
+        "watch-test" : "jest --watch"

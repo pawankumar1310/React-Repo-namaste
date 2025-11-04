@@ -6,7 +6,7 @@ const RestaurantCard = (props) => {
     const info = restName?.card?.card?.info;
     return (
         // <div className='restaurant-card' style={styleCard}>
-        <div className='restaurant-card' style={{ backgroundColor: "#f0f0f0", width: "200px" }}>
+        <div data-testid="restCard" className='restaurant-card' style={{ backgroundColor: "#f0f0f0", width: "200px" }}>
              <div className='logo-container'>
                 <img className='logo' src={CDN_URL + info?.cloudinaryImageId} />
             </div>
