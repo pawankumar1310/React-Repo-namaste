@@ -556,3 +556,7 @@ Episode 12 : Let's build our store.
     - install @testing-library/jest-dom - for toBeInTheDocument() method.
         npm i -D @testing-library/jest-dom
 
+    - for testing we use test() or it() method
+    - We can also write test case in side a group using describe() method. This method will contain multiple test case.
+    - Coverage folder has been created for test cases. No need to push it in git.
+
