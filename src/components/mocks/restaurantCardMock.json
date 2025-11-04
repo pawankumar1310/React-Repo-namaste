@@ -1,0 +1,92 @@
+{
+        "card": {
+            "card": {
+                "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+                "info": {
+                    "id": "129725",
+                    "name": "Hotel Farook",
+                    "cloudinaryImageId": "zmybiawap42zuqd5wowl",
+                    "locality": "Purasavakkam",
+                    "areaName": "Purasawalkam",
+                    "costForTwo": "₹450 for two",
+                    "cuisines": [
+                        "Biryani",
+                        "Chinese",
+                        "Arabian",
+                        "Tandoor",
+                        "Grill",
+                        "Seafood",
+                        "Indian"
+                    ],
+                    "avgRating": 4.5,
+                    "parentId": "17424",
+                    "avgRatingString": "4.5",
+                    "totalRatingsString": "24K+",
+                    "sla": {
+                        "deliveryTime": 47,
+                        "lastMileTravel": 3.7,
+                        "serviceability": "SERVICEABLE",
+                        "slaString": "45-50 mins",
+                        "lastMileTravelString": "3.7 km",
+                        "iconType": "ICON_TYPE_EMPTY"
+                    },
+                    "availability": {
+                        "nextCloseTime": "2025-09-08 23:30:00",
+                        "opened": true
+                    },
+                    "badges": {},
+                    "isOpen": true,
+                    "type": "F",
+                    "badgesV2": {
+                        "entityBadges": {
+                            "textBased": {},
+                            "imageBased": {},
+                            "textExtendedBadges": {}
+                        }
+                    },
+                    "aggregatedDiscountInfoV3": {
+                        "header": "ITEMS",
+                        "subHeader": "AT ₹99",
+                        "logoCtx": {
+                            "text": "BENEFITS"
+                        }
+                    },
+                    "orderabilityCommunication": {
+                        "title": {},
+                        "subTitle": {},
+                        "message": {},
+                        "customIcon": {},
+                        "commsStyling": {}
+                    },
+                    "differentiatedUi": {
+                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                        "differentiatedUiMediaDetails": {
+                            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                            "lottie": {},
+                            "video": {}
+                        }
+                    },
+                    "reviewsSummary": {},
+                    "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                    "restaurantOfferPresentationInfo": {},
+                    "externalRatings": {
+                        "aggregatedRating": {
+                            "rating": "--"
+                        }
+                    },
+                    "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+                },
+                "analytics": {},
+                "cta": {
+                    "link": "swiggy://menu?restaurant_id=129725&source=collection&query=Biryani",
+                    "text": "RESTAURANT_MENU",
+                    "type": "DEEPLINK"
+                },
+                "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+            },
+            "relevance": {
+                "type": "RELEVANCE_TYPE_ON_MENU_RETURN",
+                "sectionId": "MENU_RETURN_FOOD"
+            }
+        }
+    }
