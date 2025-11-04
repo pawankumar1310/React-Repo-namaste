@@ -486,7 +486,8 @@ Episode 12 : Let's build our store.
         - Selector => Subscribing to the store using a Selector.
     
     Redux Toolkit :
-        - install @reduxjs/toolkit and react-redux
+        - install @reduxjs/toolkit :    npm install @reduxjs/toolkit
+        - install react-redux      :    npm install react-redux
         - Build our store
         - connect our store to our app
         - Slice (cartSlice)
