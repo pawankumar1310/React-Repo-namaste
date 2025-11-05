@@ -81,3 +81,17 @@ Difference :
     - onClick={handleAddItem}
     - onClick={handleAddItem(item)}
     - onClick={()=> handleAddItem(item)}
+
+What are some of the ways to optimize our react code :
+    - Use React.memo for Component Re-render Optimization :
+        - React.memo() prevents unnecessary re-renders of functional components if their props haven’t changed.
+    - Use useMemo and useCallback Hooks
+            useMemo → caches computed values.
+            useCallback → caches function references.
+    - Code Splitting (Lazy Loading)
+            Use React.lazy and Suspense to load components only when needed.
+
+    
+    - We can use lazy loading
+    - Code spliting
+    - We can use inbuilt react-hooks like useMemo(), useCallback()
