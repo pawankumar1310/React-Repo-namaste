@@ -120,7 +120,7 @@ Episode 03 (JSX, React Element & Functional Component):
     - "scripts": {
         "start": "parcel index.html",
         "build": "parcel build index.html",
-        "test": "just"
+        "test": "jest"
     },
 
     - To run project : npm run start OR npm start
@@ -404,7 +404,7 @@ Episode 8 : Let's get Classy.
         
 Episode 09 : Optimising our App
     - Single Responsibility principle 
-    - create custom hooks (create custom hooks inside utils filder)
+    - create custom hooks (create custom hooks inside utils folder)
     - user is online or offline? (Or Internet is on/off)
         - Window : Online event
 
@@ -424,6 +424,9 @@ Episode 10 : Jo dikhta hai wo bikata hai.
         - material UI
         - Chankra UI
         - Ant design
+                - Lucide
+                - Tabler icons
+                - shadcn-ui
 
     - Tailwind css
         - Rapidly build modern websites without ever leaving your HTML.
