@@ -95,3 +95,34 @@ What are some of the ways to optimize our react code :
     - We can use lazy loading
     - Code spliting
     - We can use inbuilt react-hooks like useMemo(), useCallback()
+
+Redux : 
+    - Redux is a state management library used to manage global application state in a predictable way.
+    - It helps you store and control data (state) in one central place called a store, so components can use that data without passing props everywhere.
+    - Redux is needed only when your app becomes large or complex.  
+
+Context API :
+    - Context API is a built-in React feature used to share data across components without props drilling.
+    - It allows you to create a global state and let any component access it directly.
+    - It mainly solves the props drilling problem.
+    - Context API is useful for small to medium global state.
+
+Props Drilling Problem :
+    - When data needs to be used by many components, you pass props parent → child → grandchild.
+    - This becomes painful in large apps.
+    - Context API and Redux solves this because Any component can access data directly, no need for props chain.
+
+Note : 
+    - Context API and Redux Toolkit do NOT have the same purpose.
+    - They look similar because both can share global data, but their purpose, use cases, and capabilities are very different.
+
+Difference between Context API and Redux :
+    Context API = ONLY for sharing state globally. It solves props drilling — nothing more.
+    Redux Toolkit = full state management system
+        It solves:
+                How to store state
+                How to update state
+                How to structure state
+                How to handle async logic (API calls)
+                How to debug state changes
+                How to optimize performance
