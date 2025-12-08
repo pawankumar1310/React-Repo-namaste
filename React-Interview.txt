@@ -126,3 +126,72 @@ Difference between Context API and Redux :
                 How to handle async logic (API calls)
                 How to debug state changes
                 How to optimize performance
+
+- Namaste React Interview :
+============================
+    1. Hooks 
+        - useState
+        - useEffect
+        - useContext
+        - useReducer
+        - useMemo
+        - useCallback
+        - useRef
+    2. Higher Order component
+        - Why we use, how, where and what purpose?
+    3. Lifecycle Methods of components
+        - class component
+            - Mounting
+            - Updating
+            - Unmounting
+    4. State management (All about data)
+        - state/props
+        - props drilling
+        - context
+    5. Redux/Zustand
+        - Redux Toolkit (RTK)
+    6. Custom Hooks 
+        - It makes our code maintainable, readable and testable and reusable.
+    7. Lazy Loading 
+        - Code spliting
+        - Chunking 
+        - Suspense
+    8. Virtual DOM
+        - Reconcilation Algorithm
+        - React Fiber Algorithm
+        - Diff Algorithm
+        - How the component render
+        - How render works?
+    9. SSR(Server Side Rendering) and CSR (Client Side Rendering):
+        - SEO (Search Engine Optimization)
+        - Performance
+    10. Routing (RBAC : Role base Access Controller) :
+        - react-router
+        - protected routes
+        - dynamic routing
+    11. Testing : 
+        - React Testing library (jest)
+    12. Async Tasks 
+        - API call
+        - Events
+        - fetch/Axios
+        - promises
+        - setTimeInterval()
+
+    13. Reusability/Modularity/Testability
+    14. Performance
+        - Lazy loading
+        - Asset (optimize images)
+        - how to optimize js code, css code, how to write better(optimized) code (Bundler level)
+        - CDN/Server
+        - Rendering the component
+    15. Styling :
+        - Tailwind css
+        - StyleX
+        - Bootstrap/Material UI
+        - css/external css / internal css
+    16. Accessebility
+        - Security
+        - Performance
+        - Accessebility
+        - Testing
